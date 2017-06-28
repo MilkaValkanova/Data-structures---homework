@@ -127,7 +127,6 @@ bool DataCenter::Data:: operator>=(const Data& d)const
 
 void DataCenter::sortArr(DynamicArr<Data>&dataSet)
 {
-//here i use bubble sort ,because google say`s so ...
 size_t size = dataSet.getsize();
 for (size_t i = 0; i < size-1; i++)
 	{
