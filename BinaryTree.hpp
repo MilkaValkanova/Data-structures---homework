@@ -37,7 +37,7 @@ class BinaryTree
 
 	private:
 		void cleanNode(Node*);
-		Node* _copy(Node*) {};// v nqkoj drug jivot moje i da go napisha!
+		Node* _copy(Node*) {};
 		bool _search(const Node*, const T&) const;
 		void _insert(Node*&, const T&);
 		void _remove(Node*&, const T&);
@@ -170,7 +170,7 @@ void BinaryTree<T>::_remove(Node*& el, const T& data)
 			//two children
 			else
 			{
-				//nqkakva prostotiq za namirane na minimalen element v dqsno poddurvo
+				//find minimal elmenti in right subset tree
 				Node* replace = findMinInSubRight(el->right);
 				replace->left = el->left;
 				replace->right = el->right;
